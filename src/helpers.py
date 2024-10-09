@@ -7,8 +7,8 @@ def is_fancode_city(lat, lng):
     """
     Check if the user's coordinates fall within the FanCode city limits.
     """
-    lat_cond = -40 <= float(lat) <= 5
-    lng_cond = 5 <= float(lng) <= 100
+    lat_cond = -40 < float(lat) < 5
+    lng_cond = 5 < float(lng) < 100
 
     # Returns True when both conditions are valid else False
     return lat_cond and lng_cond
